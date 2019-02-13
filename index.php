@@ -25,11 +25,12 @@
 	<div class="container">
 		
 		<div class="gravatar">
-			<?php 
+			<!--<?php 
 				// grab admin email and their photo
 				$admin_email = get_option('admin_email');
 				echo get_avatar( $admin_email, 100 ); 
-			?>
+			?>-->
+			<img src="/wp-content/themes/Less/images/bhnet-logo.png" width="100" />
 		</div><!--/ author -->
 		
 		<div id="brand">
@@ -70,17 +71,15 @@
 								<?php the_title() ?>
 							</a>
 						</h1>
-						<div class="post-meta">
-							<?php if( comments_open() ) : ?>
-								<span class="comments-link">
-									<?php comments_popup_link( __( 'Comment', 'break' ), __( '1 Comment', 'break' ), __( '% Comments', 'break' ) ); ?>
-								</span>
-							<?php endif; ?>
 						
-						</div><!--/post-meta -->
-						
+					<hr/>	
 						<div class="the-content">
-							<?php the_content( 'Continue...' ); ?>
+							<?php
+								if ( is_home () || is_category() || is_archive() ) {
+	     								the_excerpt('');
+								} else {	     
+									the_content( 'Continue...' ); 
+								}?>
 							
 							<?php wp_link_pages(); ?>
 						</div><!-- the-content -->
@@ -219,11 +218,8 @@
 
 <footer class="site-footer" role="contentinfo">
 	<div class="site-info container">
-		<?php do_action( 'break_credits' ); ?>
-		<a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
-		<span class="sep"> and </span>
-		<a href="http://lessmade.com/themes/less" rel="theme">LESS</a> by <a href="http://jarederickson.com" rel="designer">Jared Erickson</a>
-	</div><!-- .site-info -->
+	Copyright Blake Helms 2019	
+</div><!-- .site-info -->
 </footer><!-- #colophon .site-footer -->
 
 <?php wp_footer(); ?>
