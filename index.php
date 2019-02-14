@@ -30,7 +30,7 @@
 				$admin_email = get_option('admin_email');
 				echo get_avatar( $admin_email, 100 ); 
 			?>-->
-			<img src="/wp-content/themes/Less/images/bhnet-logo.png" width="100" />
+			<img src="/wp-content/themes/less/images/bhnet-logo.png" width="100" />
 		</div><!--/ author -->
 		
 		<div id="brand">

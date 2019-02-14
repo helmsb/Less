@@ -46,13 +46,14 @@ License: GNU General Public License
 	// ----------------------
 	
 	// if you want to use a webfont from gooogle or something
-	@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+//	@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
 	@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700);
+	@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);       
 	// Body Font family
 	@body-font:	"Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
 	
 	// Heading font family
-	@heading-font:	"Avro", Georgia, serif;
+	@heading-font:	"Montserrat", sans-serif;
 	
 	// Site name size
 	@site-text-size:	16;
@@ -325,6 +326,8 @@ article {
 		color: @headinng-color;
 		.font-size(@title-text-size);
 		font-weight: 700;
+		display:block;
+		line-height:1.2;
 		
 		a {
 			text-decoration: none;
@@ -553,7 +556,7 @@ html[xmlns] .clearfix {
 	@rem-value: (@size / 10);
 	@px-value: @size;
 	@lineHeight: (@size * 1.48);
-	line-height: @lineHeight+0px;
+	line-height: @lineHeight+10px;
 	font-size: ~"@{px-value}px"; 
 	font-size: ~"@{rem-value}rem";
 }
