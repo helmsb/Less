@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400i,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 /*
 Theme Name: Less
@@ -317,7 +317,7 @@ select {
   padding: 0;
   margin: 0;
   background: #ffffff;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", Garamond, serif;
   line-height: 36.64px;
   font-size: 18px;
   font-size: 1.8rem;
@@ -468,7 +468,7 @@ header #brand {
   margin-top: 22px;
 }
 header #brand h1 {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   color: #565656;
   line-height: 33.68px;
@@ -518,6 +518,7 @@ article {
 }
 article .title {
   color: #404040;
+  font-family: "Montserrat", sans-serif;
   line-height: 66.24px;
   font-size: 38px;
   font-size: 3.8rem;

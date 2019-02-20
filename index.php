@@ -128,12 +128,6 @@
 					
 						<h1 class="title"><?php the_title() ?></h1>
 						<div class="post-meta">
-							<?php if( comments_open() ) : ?>
-								<span class="comments-link">
-									<?php comments_popup_link( __( 'Comment', 'less' ), __( '1 Comment', 'less' ), __( '% Comments', 'less' ) ); ?>
-								</span>
-							<?php endif; ?>
-						
 						</div><!--/post-meta -->
 						
 						<div class="the-content">
@@ -150,13 +144,6 @@
 					</article>
 
 				<?php endwhile; ?>
-				
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() )
-						comments_template( '', true );
-				?>
-
 
 			<?php else : ?>
 				

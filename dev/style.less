@@ -47,10 +47,10 @@ License: GNU General Public License
 	
 	// if you want to use a webfont from gooogle or something
 //	@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
-	@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700);
+	@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400i,700);
 	@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);       
 	// Body Font family
-	@body-font:	"Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+	@body-font:	"Merriweather",Garamond, serif;
 	
 	// Heading font family
 	@heading-font:	"Montserrat", sans-serif;
@@ -258,7 +258,7 @@ header {
 		margin-top: 22px;
 		
 		h1 {
-			font-family: @body-font;
+			font-family: @heading-font;
 			font-weight: 900;
 			color: @site-name-color;
 			.font-size(@site-text-size);
@@ -324,6 +324,7 @@ article {
 	
 	.title {
 		color: @headinng-color;
+		font-family: @heading-font;
 		.font-size(@title-text-size);
 		font-weight: 700;
 		display:block;
